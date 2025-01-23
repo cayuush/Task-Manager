@@ -1,0 +1,83 @@
+/* Global body style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Form Container */
+#taskForm {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#taskForm input, #taskForm button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#taskForm input[type="checkbox"] {
+    width: auto;
+}
+
+#taskForm button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#taskForm button:hover {
+    background-color: #45a049;
+}
+
+/* Task Table */
+#tasksTable {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#tasksTable th, #tasksTable td {
+    padding: 12px;
+    text-align: left;
+}
+
+#tasksTable th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#tasksTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #taskForm {
+        padding: 15px;
+    }
+
+    #tasksTable {
+        width: 100%;
+    }
+}
